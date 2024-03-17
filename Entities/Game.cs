@@ -12,7 +12,7 @@ public class Game
     [StringLength(20)]
     public required string Genre { get; set; }
     [Required]
-    [Length(0,1000)] 
+    [Range(1,1000)]
     public decimal Price { get; set; }
     public DateTime ReleaseDate { get; set; }
     [Url]
